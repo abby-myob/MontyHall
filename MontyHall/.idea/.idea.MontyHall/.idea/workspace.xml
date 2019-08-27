@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6a67fa-5635-405f-bf79-c871b8d8a367" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/DoorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallConsole/obj/Debug/netcoreapp2.2/MontyHallConsole.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallConsole/obj/Debug/netcoreapp2.2/MontyHallConsole.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallLibrary/obj/Debug/netcoreapp2.2/MontyHallLibrary.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallLibrary/obj/Debug/netcoreapp2.2/MontyHallLibrary.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallTests/DoorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/DoorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +40,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MontyHallTests/DoorTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="24">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
-                <marker date="1566867853325" expanded="false" signature="6:26" ph="..." />
-                <marker date="1566867853325" expanded="true" signature="52:709" ph="{...}" />
-                <marker date="1566867853325" expanded="true" signature="81:485" ph="{...}" />
-                <marker date="1566867853325" expanded="true" signature="130:479" ph="{...}" />
-                <marker date="1566867853325" expanded="true" signature="153:210" ph="/* Arrange ... */" />
-                <marker date="1566867853325" expanded="true" signature="509:646" ph="{...}" />
-                <marker date="1566867853325" expanded="true" signature="571:640" ph="{...}" />
-                <marker date="1566867853325" expanded="true" signature="669:707" ph="{...}" />
+                <marker date="1566869187938" expanded="false" signature="6:79" ph="..." />
+                <marker date="1566869187938" expanded="true" signature="105:2350" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="134:1670" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="141:702" ph="/* [Fact] ... */" />
+                <marker date="1566869187938" expanded="true" signature="785:1171" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="885:984" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1241:1664" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1341:1440" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1701:1853" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1799:1846" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1877:2287" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="1987:2042" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="2072:2207" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="2126:2197" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="2248:2281" ph="{...}" />
+                <marker date="1566869187938" expanded="true" signature="2310:2348" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MontyHallTests/IDoor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1566869186376" expanded="true" signature="24:132" ph="{...}" />
+                <marker date="1566869186376" expanded="true" signature="53:130" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,6 +86,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MontyHallTests/DoorTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MontyHallTests/IDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MontyHallLibrary/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MontyHallConsole/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -142,21 +164,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/MontyHallConsole/bin/Debug/netcoreapp2.2/MontyHallConsole.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MontyHallConsole" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MontyHallConsole/MontyHallConsole.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
@@ -172,12 +194,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566865941402</updated>
-      <workItem from="1566865942564" duration="842000" />
+      <workItem from="1566865942564" duration="2174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="842000" />
+    <option name="totallyTimeSpent" value="2174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -193,19 +215,20 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" visible="true" weight="0.23396675" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Build" weight="0.38361046" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897863" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -257,17 +280,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MontyHallTests/DoorTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="24">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
-            <marker date="1566867853325" expanded="false" signature="6:26" ph="..." />
-            <marker date="1566867853325" expanded="true" signature="52:709" ph="{...}" />
-            <marker date="1566867853325" expanded="true" signature="81:485" ph="{...}" />
-            <marker date="1566867853325" expanded="true" signature="130:479" ph="{...}" />
-            <marker date="1566867853325" expanded="true" signature="153:210" ph="/* Arrange ... */" />
-            <marker date="1566867853325" expanded="true" signature="509:646" ph="{...}" />
-            <marker date="1566867853325" expanded="true" signature="571:640" ph="{...}" />
-            <marker date="1566867853325" expanded="true" signature="669:707" ph="{...}" />
+            <marker date="1566869187938" expanded="false" signature="6:79" ph="..." />
+            <marker date="1566869187938" expanded="true" signature="105:2350" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="134:1670" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="141:702" ph="/* [Fact] ... */" />
+            <marker date="1566869187938" expanded="true" signature="785:1171" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="885:984" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1241:1664" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1341:1440" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1701:1853" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1799:1846" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1877:2287" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="1987:2042" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="2072:2207" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="2126:2197" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="2248:2281" ph="{...}" />
+            <marker date="1566869187938" expanded="true" signature="2310:2348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MontyHallTests/IDoor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1566869186376" expanded="true" signature="24:132" ph="{...}" />
+            <marker date="1566869186376" expanded="true" signature="53:130" ph="{...}" />
           </folding>
         </state>
       </provider>
