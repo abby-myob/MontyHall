@@ -5,7 +5,7 @@ namespace MontyHallLibrary.Interfaces
     public interface IDoors
     {
         List<IDoor> DoorsList { get; }
-        void SetUp();
+        void SetAllToGoats();
         void RandomlyPlaceCar();
     }
 }

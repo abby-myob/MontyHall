@@ -12,7 +12,7 @@ namespace MontyHallLibrary
             DoorsList = doorsList;
         } 
 
-        public void SetUp()
+        public void SetAllToGoats()
         {
             foreach (var door in DoorsList)
             {

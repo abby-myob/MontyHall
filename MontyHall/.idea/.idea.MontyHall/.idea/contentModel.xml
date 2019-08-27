@@ -23,11 +23,14 @@
       </e>
       <e p="MontyHallLibrary" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsoleResponseThingy.cs" t="Include" />
         <e p="Door.cs" t="Include" />
         <e p="Doors.cs" t="Include" />
+        <e p="Game.cs" t="Include" />
         <e p="Interfaces" t="Include">
           <e p="IDoor.cs" t="Include" />
           <e p="IDoors.cs" t="Include" />
+          <e p="IResponseThingy.cs" t="Include" />
         </e>
         <e p="MontyHallLibrary.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -38,6 +41,7 @@
           </e>
         </e>
         <e p="Prize.cs" t="Include" />
+        <e p="SimulationResponseThingy.cs" t="Include" />
       </e>
       <e p="MontyHallSimulation" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -63,6 +67,7 @@
             </e>
           </e>
         </e>
+        <e p="SimulationResponseThingyTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

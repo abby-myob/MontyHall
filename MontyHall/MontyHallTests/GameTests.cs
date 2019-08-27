@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using MontyHallLibrary;
 using MontyHallLibrary.Interfaces;
+using Moq;
 using Xunit;
 
 namespace MontyHallTests
@@ -11,116 +12,94 @@ namespace MontyHallTests
         public void produce_which_door_has_car_prize()
         {
             // Arrange  
-            var doors = new FakeDoors(new List<IDoor>()
-            {
-                new Door(),
-                new Door(),
-                new Door()
-            });
-            doors.SetUp();
+            var doors = new FakeDoors(new List<IDoor>() {new Door(), new Door(), new Door()});
+            doors.SetAllToGoats();
             doors.RandomlyPlaceCar();
 
-            var game = new GameManager(doors);
-            
+            var game = new Game(doors, new SimulationResponseThingy(true));
+
             // Act 
             var doorNumber = game.GetCarDoor();
-            
+
             // Assert
             Assert.Equal(1, doorNumber);
         }
-        
+
         [Fact]
         public void pick_goat_produce_other_door_with_goat()
         {
             // Arrange  
-            var doors = new FakeDoors(new List<IDoor>()
-            {
-                new Door(),
-                new Door(),
-                new Door()
-            });
-            doors.SetUp();
+            var doors = new FakeDoors(new List<IDoor>() {new Door(), new Door(), new Door()});
+            doors.SetAllToGoats();
             doors.RandomlyPlaceCar();
 
-            var game = new GameManager(doors);
-            
+            var game = new Game(doors, new SimulationResponseThingy(true));
+
             // Act 
             var doorNumber = game.GetOtherGoatDoor(2);
-            
+
             // Assert
             Assert.Equal(3, doorNumber);
         }
-        
+
         [Fact]
         public void pick_car_produce_other_door_with_goat()
         {
             // Arrange  
-            var doors = new FakeDoors(new List<IDoor>()
-            {
-                new Door(),
-                new Door(),
-                new Door()
-            });
-            doors.SetUp();
+            var doors = new FakeDoors(new List<IDoor>() {new Door(), new Door(), new Door()});
+            doors.SetAllToGoats();
             doors.RandomlyPlaceCar();
 
-            var game = new GameManager(doors);
-            
+            var game = new Game(doors, new SimulationResponseThingy(true));
+
             // Act 
             var doorNumber = game.GetOtherGoatDoor(1);
-            
+
             // Assert
             Assert.Equal(2, doorNumber);
         }
-    }
 
-    public class GameManager
-    {
-        private readonly IDoors _doors;
-
-        public GameManager(IDoors doors)
+        [Fact]
+        public void play_game_calls_doors_setAllToGoats()
         {
-            _doors = doors;
+            // Arrange  
+            var fakeDoors = new Mock<IDoors>();
+            var fakeResponseThingy = new Mock<IResponseThingy>();
+            var game = new Game(fakeDoors.Object, fakeResponseThingy.Object);
+
+            // Act 
+            game.Play();
+
+            // Assert
+            fakeDoors.Verify(d => d.SetAllToGoats(), Times.Once);
         }
 
-        public int GetCarDoor()
+        [Fact]
+        public void play_game_calls_doors_RandomlyPlaceCar()
         {
-            for (var i = 0; i < 3; i++)
-            {
-                if (_doors.DoorsList[i].Prize == Prize.Car)
-                {
-                    return i + 1;
-                }
-            }
-            return 0;
-        }
+            // Arrange  
+            var fakeDoors = new Mock<IDoors>();
+            var fakeResponseThingy = new Mock<IResponseThingy>();
+            var game = new Game(fakeDoors.Object, fakeResponseThingy.Object);
 
+            // Act 
+            game.Play();
 
-        public int GetOtherGoatDoor(int pickedDoor)
-        {
-            var pickedDoorIndex = pickedDoor - 1;
-            
-            for (var i = 0; i < 3; i++)
-            {
-                if (_doors.DoorsList[i].Prize == Prize.Goat && i != pickedDoorIndex)
-                {
-                    return i + 1;
-                }
-            }
-            
-            return 3; 
+            // Assert
+            fakeDoors.Verify(d => d.RandomlyPlaceCar(), Times.Once);
         }
     }
 
     public class FakeDoors : IDoors
     {
         public List<IDoor> DoorsList { get; }
+
         public FakeDoors(List<IDoor> doors)
         {
             DoorsList = doors;
         }
 
-        public void SetUp()
+        public void SetAllToGoats()
         {
             foreach (var door in DoorsList)
             {
@@ -129,7 +108,7 @@ namespace MontyHallTests
         }
 
         public void RandomlyPlaceCar()
-        { 
+        {
             DoorsList[0].SetPrize(Prize.Car);
         }
     }

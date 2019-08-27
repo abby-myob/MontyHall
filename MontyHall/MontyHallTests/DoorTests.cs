@@ -20,7 +20,7 @@ namespace MontyHallTests
             });
             
             // Act 
-            doors.SetUp();
+            doors.SetAllToGoats();
             
             // Assert
             Assert.Equal(3, doors.DoorsList.Count(d => d.Prize == Prize.Goat));
@@ -38,7 +38,7 @@ namespace MontyHallTests
             });
             
             // Act 
-            doors.SetUp();
+            doors.SetAllToGoats();
             doors.RandomlyPlaceCar();
             
             // Assert
