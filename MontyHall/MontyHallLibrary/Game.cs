@@ -16,6 +16,11 @@ namespace MontyHallLibrary
         public void Play()
         {
             SetUpDoors();
+
+            var pickedDoor = _io.PickDoor();
+            _io.ShowGoatDoor(GetOtherGoatDoor(pickedDoor));
+            var isSwitching = _io.SwitchToOtherDoor();
+            _io.ShowWinOrLose(WinOrLose(isSwitching, pickedDoor, GetCarDoor()));
         }
 
         public int GetCarDoor()
@@ -46,12 +51,18 @@ namespace MontyHallLibrary
             return 3; 
         }
 
+        public bool WinOrLose(bool isSwitch, int pickedDoor, int carDoor)
+        {
+            return (carDoor == pickedDoor && !isSwitch) || (carDoor != pickedDoor && isSwitch);
+        }
 
 
-        private void SetUpDoors()
+        public void SetUpDoors()
         {
             _doors.SetAllToGoats();
             _doors.RandomlyPlaceCar();
         }
+
+
     }
 }

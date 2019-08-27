@@ -3,6 +3,8 @@ namespace MontyHallLibrary.Interfaces
     public interface IResponseThingy
     {
         int PickDoor();
-        bool SwitchToOtherDoor(); 
+        bool SwitchToOtherDoor();
+        void ShowGoatDoor(int getOtherGoatDoor);
+        void ShowWinOrLose(bool winOrLose);
     }
 }

@@ -68,7 +68,7 @@ namespace MontyHallTests
             var game = new Game(fakeDoors.Object, fakeResponseThingy.Object);
 
             // Act 
-            game.Play();
+            game.SetUpDoors();
 
             // Assert
             fakeDoors.Verify(d => d.SetAllToGoats(), Times.Once);
@@ -81,12 +81,31 @@ namespace MontyHallTests
             var fakeDoors = new Mock<IDoors>();
             var fakeResponseThingy = new Mock<IResponseThingy>();
             var game = new Game(fakeDoors.Object, fakeResponseThingy.Object);
-
+            
             // Act 
-            game.Play();
+            game.SetUpDoors();
 
             // Assert
             fakeDoors.Verify(d => d.RandomlyPlaceCar(), Times.Once);
+        }
+        
+        [Theory]
+        [InlineData(true, 2, 3, true)]
+        [InlineData(true, 3, 3, false)]
+        [InlineData(false, 2, 3, false)]
+        [InlineData(false, 1, 1, true)]
+        public void test_win_Or_lose_method(bool isSwitch, int pickedDoor, int carDoor, bool expected)
+        {
+            // Arrange  
+            var fakeDoors = new Mock<IDoors>();
+            var fakeResponseThingy = new Mock<IResponseThingy>();
+            var game = new Game(fakeDoors.Object, fakeResponseThingy.Object);
+
+            // Act 
+            var isWin = game.WinOrLose(isSwitch, pickedDoor, carDoor);
+
+            // Assert
+            Assert.Equal(expected, isWin);
         }
     }
 

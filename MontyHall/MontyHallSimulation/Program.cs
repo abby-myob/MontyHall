@@ -1,12 +1,23 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using MontyHallLibrary;
+using MontyHallLibrary.Interfaces;
 
 namespace MontyHallSimulation
 {
-    class Program
+    internal static class Program
     {
-        static void Main()
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var gameSwitching = new Game(new Doors(new List<IDoor>() {new Door(), new Door(), new Door()}),
+                new SimulationResponseThingy(true));
+            var gameSticking = new Game(new Doors(new List<IDoor>() {new Door(), new Door(), new Door()}),
+                new SimulationResponseThingy(false));
+
+            for (var i = 0; i < 1000; i++)
+            {
+                gameSwitching.Play();
+                gameSticking.Play();
+            } 
         }
     }
 }

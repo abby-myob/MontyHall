@@ -7,13 +7,13 @@ namespace MontyHallLibrary
     {
         public int PickDoor()
         {
-            Console.WriteLine("what door?");
+            Console.WriteLine("What door would you like to pick?");
             return int.Parse(Console.ReadLine());
         }
 
         public bool SwitchToOtherDoor()
         {
-            Console.WriteLine("switch?");
+            Console.Write("Do you want to switch? (y/n) ");
             var response = Console.ReadLine();
             switch (response)
             {
@@ -23,6 +23,16 @@ namespace MontyHallLibrary
                 default:
                     return false;
             }
+        }
+
+        public void ShowGoatDoor(int otherGoatDoor)
+        {
+            Console.WriteLine($"A goat is behind door {otherGoatDoor}");
+        }
+
+        public void ShowWinOrLose(bool winOrLose)
+        {
+            Console.WriteLine(winOrLose ? "You Won" : "You Lost");
         }
     }
 }
