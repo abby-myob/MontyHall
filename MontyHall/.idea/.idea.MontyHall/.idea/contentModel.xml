@@ -23,7 +23,12 @@
       </e>
       <e p="MontyHallLibrary" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="Door.cs" t="Include" />
+        <e p="Doors.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IDoor.cs" t="Include" />
+          <e p="IDoors.cs" t="Include" />
+        </e>
         <e p="MontyHallLibrary.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -32,12 +37,12 @@
             </e>
           </e>
         </e>
+        <e p="Prize.cs" t="Include" />
       </e>
       <e p="MontyHallTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Door.cs" t="Include" />
         <e p="DoorTests.cs" t="Include" />
-        <e p="IDoor.cs" t="Include" />
+        <e p="GameTests.cs" t="Include" />
         <e p="MontyHallTests.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

@@ -1,4 +1,6 @@
-namespace MontyHallTests
+using MontyHallLibrary.Interfaces;
+
+namespace MontyHallLibrary
 {
     public class Door : IDoor
     {
