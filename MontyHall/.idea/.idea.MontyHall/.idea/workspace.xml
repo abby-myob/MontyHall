@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6a67fa-5635-405f-bf79-c871b8d8a367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MontyHallLibrary/Game.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MontyHallLibrary/Interfaces/IResponseThingy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MontyHallLibrary/SimulationResponseThingy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MontyHallTests/SimulationResponseThingyTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallConsole/obj/Debug/netcoreapp2.2/MontyHallConsole.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallConsole/obj/Debug/netcoreapp2.2/MontyHallConsole.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallLibrary/Doors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallLibrary/Doors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallLibrary/Interfaces/IDoors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallLibrary/Interfaces/IDoors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallLibrary/obj/Debug/netcoreapp2.2/MontyHallLibrary.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallLibrary/obj/Debug/netcoreapp2.2/MontyHallLibrary.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallSimulation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallSimulation/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/DoorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/DoorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/GameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/GameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/MontyHallTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/MontyHallTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/MontyHallTests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/MontyHallTests.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallLibrary/ConsoleResponseThingy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallLibrary/ConsoleResponseThingy.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,11 +72,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MontyHallLibrary/ConsoleResponseThingy.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
                   <folding>
-                    <marker date="1566881224455" expanded="true" signature="26:90" ph="{...}" />
-                    <marker date="1566881224455" expanded="true" signature="67:88" ph="{...}" />
+                    <marker date="1566881590676" expanded="true" signature="6:48" ph="..." />
+                    <marker date="1566881590676" expanded="true" signature="76:646" ph="{...}" />
+                    <marker date="1566881590676" expanded="true" signature="135:644" ph="{...}" />
+                    <marker date="1566881590676" expanded="true" signature="171:286" ph="{...}" />
+                    <marker date="1566881590676" expanded="true" signature="327:638" ph="{...}" />
+                    <marker date="1566881590676" expanded="true" signature="456:628" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -288,12 +274,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566865941402</updated>
-      <workItem from="1566865942564" duration="8838000" />
+      <workItem from="1566865942564" duration="9202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8838000" />
+    <option name="totallyTimeSpent" value="9202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -306,7 +292,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="957" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14041515" />
@@ -537,11 +522,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MontyHallLibrary/ConsoleResponseThingy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="330">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <marker date="1566881224455" expanded="true" signature="26:90" ph="{...}" />
-            <marker date="1566881224455" expanded="true" signature="67:88" ph="{...}" />
+            <marker date="1566881590676" expanded="true" signature="6:48" ph="..." />
+            <marker date="1566881590676" expanded="true" signature="76:646" ph="{...}" />
+            <marker date="1566881590676" expanded="true" signature="135:644" ph="{...}" />
+            <marker date="1566881590676" expanded="true" signature="171:286" ph="{...}" />
+            <marker date="1566881590676" expanded="true" signature="327:638" ph="{...}" />
+            <marker date="1566881590676" expanded="true" signature="456:628" ph="{...}" />
           </folding>
         </state>
       </provider>
