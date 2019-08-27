@@ -20,7 +20,7 @@ namespace MontyHallLibrary
             }
         }
 
-        public void RandomlyPlaceGoat()
+        public void RandomlyPlaceCar()
         {
             var random = new Random();
             var index = random.Next(0, 3);

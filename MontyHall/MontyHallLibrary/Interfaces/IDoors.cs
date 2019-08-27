@@ -6,6 +6,6 @@ namespace MontyHallLibrary.Interfaces
     {
         List<IDoor> DoorsList { get; }
         void SetUp();
-        void RandomlyPlaceGoat();
+        void RandomlyPlaceCar();
     }
 }

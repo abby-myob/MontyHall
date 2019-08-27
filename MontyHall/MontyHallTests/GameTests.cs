@@ -18,7 +18,7 @@ namespace MontyHallTests
                 new Door()
             });
             doors.SetUp();
-            doors.RandomlyPlaceGoat();
+            doors.RandomlyPlaceCar();
 
             var game = new GameManager(doors);
             
@@ -40,7 +40,7 @@ namespace MontyHallTests
                 new Door()
             });
             doors.SetUp();
-            doors.RandomlyPlaceGoat();
+            doors.RandomlyPlaceCar();
 
             var game = new GameManager(doors);
             
@@ -52,7 +52,7 @@ namespace MontyHallTests
         }
         
         [Fact]
-        public void pick_goat_prod_uce_other_door_with_goat()
+        public void pick_car_produce_other_door_with_goat()
         {
             // Arrange  
             var doors = new FakeDoors(new List<IDoor>()
@@ -62,15 +62,15 @@ namespace MontyHallTests
                 new Door()
             });
             doors.SetUp();
-            doors.RandomlyPlaceGoat();
+            doors.RandomlyPlaceCar();
 
             var game = new GameManager(doors);
             
             // Act 
-            var doorNumber = game.GetOtherGoatDoor(2);
+            var doorNumber = game.GetOtherGoatDoor(1);
             
             // Assert
-            Assert.Equal(3, doorNumber);
+            Assert.Equal(2, doorNumber);
         }
     }
 
@@ -128,7 +128,7 @@ namespace MontyHallTests
             }
         }
 
-        public void RandomlyPlaceGoat()
+        public void RandomlyPlaceCar()
         { 
             DoorsList[0].SetPrize(Prize.Car);
         }

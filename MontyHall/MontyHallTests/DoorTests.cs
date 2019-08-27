@@ -39,7 +39,7 @@ namespace MontyHallTests
             
             // Act 
             doors.SetUp();
-            doors.RandomlyPlaceGoat();
+            doors.RandomlyPlaceCar();
             
             // Assert
             Assert.Equal(1,doors.DoorsList.Count(d => d.Prize == Prize.Car));

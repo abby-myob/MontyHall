@@ -39,6 +39,18 @@
         </e>
         <e p="Prize.cs" t="Include" />
       </e>
+      <e p="MontyHallSimulation" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MontyHallSimulation.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="MontyHallSimulation.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="MontyHallTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DoorTests.cs" t="Include" />
