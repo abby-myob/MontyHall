@@ -328,3 +328,16 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+MontyHall/.idea/.idea.MontyHall/.idea/contentModel.xml
+*.idea/contentModel.xml
+MontyHall/.idea/.idea.MontyHall/.idea/workspace.xml
+*.idea/workspace.xml
+MontyHall/MontyHallConsole/obj/Debug/netcoreapp2.2/MontyHallConsole.csprojAssemblyReference.cache
+*.csprojAssemblyReference.cache
+MontyHall/MontyHallLibrary/obj/Debug/netcoreapp2.2/MontyHallLibrary.assets.cache
+*.assets.cache
+MontyHall/MontyHallTests/obj/Debug/netcoreapp2.2/MontyHallTests.csprojAssemblyReference.cache
+*.csprojAssemblyReference.cache
+**.cache
+*.cache
