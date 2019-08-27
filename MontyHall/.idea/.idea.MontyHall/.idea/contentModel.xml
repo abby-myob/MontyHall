@@ -23,7 +23,15 @@
       </e>
       <e p="MontyHallLibrary" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="ConsoleResponseThingy.cs" t="Include" />
+        <e p="Door.cs" t="Include" />
+        <e p="Doors.cs" t="Include" />
+        <e p="Game.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IDoor.cs" t="Include" />
+          <e p="IDoors.cs" t="Include" />
+          <e p="IResponseThingy.cs" t="Include" />
+        </e>
         <e p="MontyHallLibrary.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -32,9 +40,25 @@
             </e>
           </e>
         </e>
+        <e p="Prize.cs" t="Include" />
+        <e p="SimulationResponseThingy.cs" t="Include" />
+      </e>
+      <e p="MontyHallSimulation" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MontyHallSimulation.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="MontyHallSimulation.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
       </e>
       <e p="MontyHallTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DoorTests.cs" t="Include" />
+        <e p="GameTests.cs" t="Include" />
         <e p="MontyHallTests.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -43,7 +67,7 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="SimulationResponseThingyTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
