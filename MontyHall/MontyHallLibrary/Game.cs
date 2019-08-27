@@ -12,6 +12,11 @@ namespace MontyHallLibrary
             _doors = doors;
             _io = io;
         }
+        
+        public void Play()
+        {
+            SetUpDoors();
+        }
 
         public int GetCarDoor()
         {
@@ -41,12 +46,7 @@ namespace MontyHallLibrary
             return 3; 
         }
 
-        public void Play()
-        {
-            SetUpDoors();
 
-            
-        }
 
         private void SetUpDoors()
         {
