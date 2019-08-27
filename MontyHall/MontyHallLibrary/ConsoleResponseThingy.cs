@@ -7,8 +7,14 @@ namespace MontyHallLibrary
     {
         public int PickDoor()
         {
-            Console.WriteLine("What door would you like to pick?");
-            return int.Parse(Console.ReadLine());
+            var input = 0;
+            while (input > 3 || input < 1)
+            {
+                Console.WriteLine("What door would you like to pick?");
+                int.TryParse(Console.ReadLine(), out input);
+            }
+            
+            return input;
         }
 
         public bool SwitchToOtherDoor()

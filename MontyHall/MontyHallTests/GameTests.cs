@@ -24,6 +24,27 @@ namespace MontyHallTests
             // Assert
             Assert.Equal(1, doorNumber);
         }
+        
+        [Fact]
+        public void validating_usage_of_response_methods()
+        {
+            // Arrange  
+            var doors = new FakeDoors(new List<IDoor>() {new Door(), new Door(), new Door()});
+            doors.SetAllToGoats();
+            doors.RandomlyPlaceCar(); 
+            var fakeIo = new Mock<IResponseThingy>();
+            fakeIo.Setup(o => o.PickDoor()).Returns(4); 
+            var game = new Game(doors, fakeIo.Object);
+ 
+            // Act 
+            game.Play();  
+            
+            // Assert
+            fakeIo.Verify(o => o.PickDoor(), Times.Once);
+            fakeIo.Verify(o => o.SwitchToOtherDoor(), Times.Once);
+            fakeIo.Verify(o => o.ShowGoatDoor(It.IsAny<int>()), Times.Once);
+            fakeIo.Verify(o => o.ShowWinOrLose(It.IsAny<bool>()), Times.Once);
+        }
 
         [Fact]
         public void pick_goat_produce_other_door_with_goat()
