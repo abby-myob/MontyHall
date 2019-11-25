@@ -8,7 +8,7 @@ namespace MontyHallSimulation
     {
         private static void Main()
         {
-            for (var j = 0; j < 20; j++)
+            for (var j = 0; j < 1; j++)
             {
                 var gameSwitching = new Game(new Doors(new List<IDoor>() {new Door(), new Door(), new Door()}),
                     new SimulationResponseThingy(true));
